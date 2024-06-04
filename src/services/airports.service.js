@@ -7,8 +7,9 @@ class AirportsService {
         this._airports = airports;
     }
 
+    // test
     getAll(){
-        return this._airports.filter(a => a.code).map(avoidEmptyCity);
+        return this._airports.filter(a => a.code).map(avoidEmptyCity).sort((a, b) => (a.city > b.city) ? 1 : -1);
     }
 
     getByCode(code) {
