@@ -1,6 +1,6 @@
    pool:
      #vmImage: 'ubuntu-18.04'
-     name: Azure Pipelines
+     name: Default
    trigger:
      - master
    steps:
